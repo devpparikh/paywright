@@ -1,0 +1,20 @@
+{
+  "name": "@paywright/docs",
+  "type": "module",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/markdown-satteri": "^0.4.4",
+    "@astrojs/starlight": "^0.42.6",
+    "astro": "^7.2.10",
+    "cookie": "^2.0.1",
+    "sharp": "^0.35.3",
+    "starlight-openapi": "^0.27.0"
+  },
+  "private": true
+}

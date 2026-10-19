@@ -4,10 +4,11 @@
   "description": "Scaffold a production-ready Stripe payment microservice (NestJS + TypeORM + BullMQ)",
   "keywords": ["paywright", "stripe", "nestjs", "payments", "scaffold", "create-app"],
   "license": "MIT",
+  "homepage": "https://docs.paywright.dev-parikh.com",
   "author": "Dev Parikh",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devparikh0506/stripe-payment-nestjs.git"
+    "url": "git+https://github.com/devpparikh/paywright.git"
   },
   "bin": {
     "create-paywright-app": "dist/index.js"

@@ -1,0 +1,43 @@
+---
+title: Paywright
+description: Scaffold a production-ready Stripe payment microservice in one command.
+template: splash
+hero:
+  tagline: Scaffold a production-ready Stripe payment microservice in one command. Any app, in any language, talks to it over REST.
+  actions:
+    - text: Quick start
+      link: /start/quick-start/
+      icon: right-arrow
+    - text: API reference
+      link: /api/
+      variant: minimal
+    - text: GitHub
+      link: https://github.com/devpparikh/paywright
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+```bash
+npx create-paywright-app my-payment-service
+```
+
+<CardGrid>
+	<Card title="Owns the Stripe integration" icon="puzzle">
+		Customers, plans, one-time payments, subscriptions, invoices and webhook
+		processing. Your apps store only the returned IDs.
+	</Card>
+	<Card title="Idempotent webhooks" icon="random">
+		Signature-verified, deduplicated with a race-free insert, queued to BullMQ
+		and processed in the background with exponential retries.
+	</Card>
+	<Card title="Resilient Stripe calls" icon="approve-check">
+		Circuit breaker, retry with backoff and timeouts around every Stripe call.
+		Card declines are never retried.
+	</Card>
+	<Card title="Typed client" icon="seti:typescript">
+		`@paywright/sdk` gives typed methods over every endpoint, generated from
+		the service's OpenAPI spec.
+	</Card>
+</CardGrid>
