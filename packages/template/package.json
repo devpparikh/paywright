@@ -6,7 +6,7 @@
   "author": "Dev Parikh",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devparikh0506/stripe-payment-nestjs.git",
+    "url": "git+https://github.com/devpparikh/paywright.git",
     "directory": "packages/template"
   },
   "files": [

@@ -161,13 +161,13 @@ Complete, auto-generated reference for every method and model:
 
 | Resource | Reference |
 |---|---|
-| Customers | [CustomersApi](https://github.com/devparikh0506/stripe-payment-nestjs/blob/main/packages/sdk/docs/CustomersApi.md) |
-| Plans | [PlansApi](https://github.com/devparikh0506/stripe-payment-nestjs/blob/main/packages/sdk/docs/PlansApi.md) |
-| Payments | [PaymentsApi](https://github.com/devparikh0506/stripe-payment-nestjs/blob/main/packages/sdk/docs/PaymentsApi.md) |
-| Subscriptions | [SubscriptionsApi](https://github.com/devparikh0506/stripe-payment-nestjs/blob/main/packages/sdk/docs/SubscriptionsApi.md) |
-| Invoices | [InvoicesApi](https://github.com/devparikh0506/stripe-payment-nestjs/blob/main/packages/sdk/docs/InvoicesApi.md) |
+| Customers | [CustomersApi](https://github.com/devpparikh/paywright/blob/main/packages/sdk/docs/CustomersApi.md) |
+| Plans | [PlansApi](https://github.com/devpparikh/paywright/blob/main/packages/sdk/docs/PlansApi.md) |
+| Payments | [PaymentsApi](https://github.com/devpparikh/paywright/blob/main/packages/sdk/docs/PaymentsApi.md) |
+| Subscriptions | [SubscriptionsApi](https://github.com/devpparikh/paywright/blob/main/packages/sdk/docs/SubscriptionsApi.md) |
+| Invoices | [InvoicesApi](https://github.com/devpparikh/paywright/blob/main/packages/sdk/docs/InvoicesApi.md) |
 
-Request models: [CreateCustomerDto](https://github.com/devparikh0506/stripe-payment-nestjs/blob/main/packages/sdk/docs/CreateCustomerDto.md) · [CreatePaymentDto](https://github.com/devparikh0506/stripe-payment-nestjs/blob/main/packages/sdk/docs/CreatePaymentDto.md) · [CreatePlanDto](https://github.com/devparikh0506/stripe-payment-nestjs/blob/main/packages/sdk/docs/CreatePlanDto.md) · [CreateSubscriptionDto](https://github.com/devparikh0506/stripe-payment-nestjs/blob/main/packages/sdk/docs/CreateSubscriptionDto.md) · [UpdateCustomerDto](https://github.com/devparikh0506/stripe-payment-nestjs/blob/main/packages/sdk/docs/UpdateCustomerDto.md)
+Request models: [CreateCustomerDto](https://github.com/devpparikh/paywright/blob/main/packages/sdk/docs/CreateCustomerDto.md) · [CreatePaymentDto](https://github.com/devpparikh/paywright/blob/main/packages/sdk/docs/CreatePaymentDto.md) · [CreatePlanDto](https://github.com/devpparikh/paywright/blob/main/packages/sdk/docs/CreatePlanDto.md) · [CreateSubscriptionDto](https://github.com/devpparikh/paywright/blob/main/packages/sdk/docs/CreateSubscriptionDto.md) · [UpdateCustomerDto](https://github.com/devpparikh/paywright/blob/main/packages/sdk/docs/UpdateCustomerDto.md)
 
 The `docs/` folder is regenerated from the OpenAPI spec on every build, so it always matches the live API.
 

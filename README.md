@@ -134,8 +134,8 @@ packages/
 ## Developing from source
 
 ```bash
-git clone <this-repo>
-cd stripe-payment-nestjs
+git clone https://github.com/devpparikh/paywright.git
+cd paywright
 npm install                       # workspace root installs both packages
 
 # run the service template directly
