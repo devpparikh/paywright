@@ -6,6 +6,8 @@
 
 Scaffold a production-ready **Stripe payment microservice** in one command.
 
+📖 **Documentation: [docs.paywright.dev-parikh.com](https://docs.paywright.dev-parikh.com)**
+
 ```bash
 npx create-paywright-app my-payment-service
 ```
@@ -123,8 +125,10 @@ a Python, Go, or any-language client the same way — see
 packages/
 ├── cli/        the npx scaffolder (published to npm as create-paywright-app)
 ├── template/   the NestJS service that gets scaffolded
-└── sdk/        typed TypeScript client generated from the service's OpenAPI
-                spec (published to npm as @paywright/sdk)
+├── sdk/        typed TypeScript client generated from the service's OpenAPI
+│               spec (published to npm as @paywright/sdk)
+└── docs/       documentation site (Starlight), deployed to
+                docs.paywright.dev-parikh.com
 ```
 
 ## Developing from source

@@ -16,6 +16,7 @@
     "paywright"
   ],
   "license": "MIT",
+  "homepage": "https://docs.paywright.dev-parikh.com",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
   "module": "./dist/esm/index.js",

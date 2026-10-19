@@ -1,0 +1,55 @@
+name: Docs
+
+# Builds the docs site on every PR that touches it, and deploys it to
+# Cloudflare (docs.paywright.dev-parikh.com) on pushes to main. The API
+# reference is generated from packages/template/openapi.json, so a spec
+# change redeploys the docs too.
+on:
+  push:
+    branches: [main]
+    paths:
+      - packages/docs/**
+      - packages/template/openapi.json
+      - .github/workflows/docs.yml
+  pull_request:
+    branches: [main]
+    paths:
+      - packages/docs/**
+      - packages/template/openapi.json
+      - .github/workflows/docs.yml
+
+concurrency:
+  group: docs-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build docs
+        run: npm run build --workspace packages/docs
+        env:
+          ASTRO_TELEMETRY_DISABLED: 1
+
+      - name: Deploy to Cloudflare
+        # Needs repo secrets CLOUDFLARE_API_TOKEN (Edit Cloudflare Workers
+        # template, scoped to this account and the dev-parikh.com zone) and
+        # CLOUDFLARE_ACCOUNT_ID
+        if: github.event_name == 'push'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: packages/docs
+          wranglerVersion: '4.151.2'
+          command: deploy
