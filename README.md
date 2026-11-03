@@ -10,6 +10,8 @@ Scaffold a production-ready **Stripe payment microservice** in one command.
 
 📖 **Documentation: [docs.paywright.dev-parikh.com](https://docs.paywright.dev-parikh.com)**
 
+✍️ **Design write-up: [How I turned a week of Stripe plumbing into one command](https://medium.com/@dev.dpparikh/paykit-how-i-turned-a-week-of-stripe-plumbing-into-one-command-063251013799)**
+
 ```bash
 npx create-paywright-app my-payment-service
 ```
